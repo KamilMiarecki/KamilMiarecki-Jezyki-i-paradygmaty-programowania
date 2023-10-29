@@ -1,0 +1,9 @@
+osoba(kamil, 22, siatkowka).
+osoba(kacper, 21, koszykowka).
+osoba(mateusz, 20, baseball).
+osoba(hubert, 19, golf).
+
+
+starszy(X, Y) :- osoba(X,A , _), osoba(Y,B , _),A > B .
+mlodszy(X, Y) :- osoba(X,A , _), osoba(Y,B , _),A < B .
+takiSamWiek(X, Y) :- osoba(X,A , _), osoba(Y,B , _), A=:=B , X\=Y.
