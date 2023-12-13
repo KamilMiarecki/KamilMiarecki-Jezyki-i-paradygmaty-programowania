@@ -1,0 +1,25 @@
+z1.
+
+[27]> (defun laczenie (lista1 lista2)
+(append lista1 lista2))
+LACZENIE
+[30]> (laczenie '(1 2 3 4 5) '(a b c d))
+(1 2 3 4 5 A B C D)
+
+z2.
+[32]> (defun odwrocenielisty (listaA)
+(let ((wynik '()))
+(dolist (item listaA)
+(push item wynik))
+wynik))
+ODWROCENIELISTY
+[33]> (odwrocenielisty '(1 2 3 4 5))
+(5 4 3 2 1)
+
+z3.
+[34]> (defun palindrom (lista)
+(let ((odwrocona (odwrocenielisty lista)))
+(equal lista odwrocona)))
+PALINDROM
+[37]> (palindrom '(kajak))
+T

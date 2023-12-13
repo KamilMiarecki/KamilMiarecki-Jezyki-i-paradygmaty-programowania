@@ -1,0 +1,32 @@
+1.
+
+ (+ 2 (/ (* 3 4)8))
+
+2.
+
+(+ (sin 12) (cos(mod 256 32)))
+
+
+3.
+[1]> (defun suma (a b) (+ a b))
+SUMA
+[2]> (suma 4 3)
+7
+
+4.
+
+[1]> (defun czyparzysta (a) (if (evenp a) t nil))
+CZYPARZYSTA
+
+
+5.
+
+[1]> (defun silnia (a) (if (> a 0) (* a (silnia ( - a 1))) 1 ))
+SILNIA
+[2]> (silnia 5)
+120
+
+6. [1]> (defun fib (n) (if (< n 2) n (+ (fib (- n 1)) (fib (- n 2)))))
+FIB
+[3]> (fib 8)
+21
